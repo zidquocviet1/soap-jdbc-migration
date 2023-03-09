@@ -1,0 +1,15 @@
+spring:
+  flyway:
+    user: postgres
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/tac
+    baseline-on-migrate: true
+
+app:
+  datasource:
+    main:
+      jdbcUrl: jdbc:postgresql://localhost:5432/tac
+      username: postgres
+      password: postgres
+      driverClassName: org.postgresql.Driver
+      maxPoolSize: 20
